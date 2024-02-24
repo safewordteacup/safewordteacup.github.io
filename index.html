@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HTML: Images</title>
-    </head>
-    <body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Webpage</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 0;
+        text-align: center;
+    }
+    header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .content {
+        width: 33.333%;
+        margin: 100px auto;
+        background-color: rgba(255, 255, 153, 0.8);
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+</style>
+</head>
+<body>
 
-    <h1>All about rabbits!</h1>
-    
-    <h3>Why rabbits make great pets</h3>
-    
-    <ul>
-        <li>They're furry!</li>
-        <li>Great listeners!</li>
-        <li>Eat all your leftover carrots!</li>
-    </ul>
-    
-    <h3>Top 3 most famous rabbits</h3>
-    
-    <ol>
-        <li>Bugs bunny</li>
-        <li>Easter Bunny</li>
-        <li>Thumper</li>
-    </ol>
-    
-    <h2>Basic info</h2>
-    
-    <p>Rabbits are little creatures with long ears and puffy tails, and they move their nose up and down in an adorable way. They eat the most orange vegetables in <em>our</em> world, and <strong>they reproduce more than any human <em>ever</em> has</strong>.</p>
-    
-    <h2>Songs</h2>
-    
-    <p>Little Bunny Foo Foo, <br>
-I don't want to see you <br>
-scooping up the field mice <br>
-and bopping them on the head!</p>
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Gallery</a>
+        <a href="#">Education</a>
+        <a href="#">About Me</a>
+    </nav>
+</header>
 
-    </body>
+<div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor vitae libero tristique auctor. Integer tincidunt urna at metus varius, eu tempor eros scelerisque. Suspendisse potenti. Nullam vehicula mauris non metus suscipit, ut finibus mauris vestibulum. Vestibulum nec lorem justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec interdum risus vel urna tempus, in hendrerit mauris dictum. Cras in semper tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla et nunc ac felis scelerisque cursus. Suspendisse ac condimentum eros. Sed faucibus, nunc id ultrices feugiat, purus velit auctor magna, non varius ex eros at leo. Vivamus fermentum nulla quis ex fermentum, a convallis lorem elementum. Fusce vestibulum convallis elit, eu tincidunt est. Aliquam erat volutpat. Vivamus malesuada nulla eu justo convallis fermentum.</p>
+</div>
+
+</body>
 </html>
