@@ -1,0 +1,133 @@
+/* CSS content borders */
+* {
+  box-sizing: border-box;
+}
+
+/* CSS h1 DEF */
+h1 {
+  font-size: 40px;
+  font-family: Courier;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  /* text-decoration: overline underline; */
+  word-spacing: -10px;
+  text-shadow: 1px 1px rgb(150, 150, 150);
+}
+
+/* CSS body DEF */
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+/* CSS table DEF */
+table, td {
+  text-align: center;
+}
+
+table {
+  margin: 15px;
+  position: relative;
+  transform: translate(2%, 5%);
+  border-collapse: collapse;
+  width: 95%;
+  table-layout: fixed;
+}
+
+td {
+  height: 50px;
+  font-size: 25px;
+  font-family: Courier New;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: rgb(255,255,255,0.9);
+  box-shadow: 0px 0px 2px 3px rgba( 0, 0, 0, 0.3);
+}
+
+/* CSS video DEF */
+video {
+  left: 50%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/* CSS footer DEF*/
+footer {
+  position: absolute;
+  top: 127%;
+  left: 50%;
+  text-decoration: underline;
+  font-family: Times New Roman;
+  color: rgb(0, 160, 160);
+  font-weight: bold;
+}
+
+/* CSS text box DEF */
+/* CSS for text box */
+.text-box {
+  position: relative;
+  transform: translate(12.5%, 2%);
+  width: 80%; /* Adjust width as needed */
+  background-color: rgba(255, 255, 255, 0.98); /* Adjust opacity as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+}
+
+.text-box p {
+  font-size: 20px; /* Adjust text size as needed */
+  text-align: center;
+}
+
+
+/*/////////////////////////////////////////////////*/
+/* CSS Gallery DEF*/
+
+/* CSS grid DEF */
+.column {
+  float: left;
+  width: 12.5%;
+  border: 2px solid rgb(155,148,131);
+  padding: 1px;
+}
+
+/* Inside grid */
+.column img {
+  opacity: 0.7; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* image container */
+.container {
+  left: 50%;
+  position: absolute;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+/* Closable button */
+.closebtn {
+  position: absolute;
+  top: 0.5%;
+  right: 0.5%;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
