@@ -6,7 +6,7 @@
 /* CSS h1 DEF */
 h1 {
   font-size: 40px;
-  font-family: Courier;
+  font-family: Monospace;
   color: rgb(0, 0, 0);
   text-align: left;
   /* text-decoration: overline underline; */
@@ -16,10 +16,10 @@ h1 {
 
 /* CSS body DEF */
 body {
-  background-image: url('bg.jpg');
+  background-image: url('bg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@ table {
 td {
   height: 50px;
   font-size: 25px;
-  font-family: Courier;
+  font-family: Monospace;
   color: rgb(0, 0, 0);
   font-weight: 900;
   border-radius: 10px;
