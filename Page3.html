@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html>
+
+<!--CSS STYLE-->
+<link rel="stylesheet" href="style.css">
+
+<!--HTML BODY-->
+<body>
+
+<!--h1 INSIDE BODY-->
+<h1>
+  Howl's Moving Castle
+</h1>
+
+<!--TABLE INSIDE BODY-->
+<table>
+ <tr>
+    <td onclick="location.href='Page1.html'">Filma</td>
+	<td onclick="location.href='Page2.html'">Apraksts</td>
+	<td onclick="location.href='Page3.html'">Galerija</td>
+ </tr>
+ </table>
+
+<!--PREVIEW IMG INSIDE BODY-->
+<div class="row">
+  <div class="column">
+    <img src="1.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="2.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="3.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="4.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="5.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="6.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="7.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="8.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!--EXPANDED IMG CONTAINER INSIDE BODY-->
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+</div>
+
+<!--SCRIPT for IMG INSIDE BODY-->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<!--FOOTER INSIDE BODY-->
+<footer>
+3
+</footer>
+
+</body>
+
+</html>
