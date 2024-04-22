@@ -1,109 +1,128 @@
-/* CSS content borders */
 * {
   box-sizing: border-box;
 }
-
-/* CSS h1 DEF */
-h1 {
-  font-size: 40px;
-  font-family: Monospace;
-  color: rgb(0, 0, 0);
-  text-align: left;
-  /* text-decoration: overline underline; */
-  word-spacing: -10px;
-  text-shadow: 1px 1px rgb(150, 150, 150);
+h2 {
+	font-family: Courier;
 }
 
-/* CSS body DEF */
+h3 {
+	font-family: Courier;
+}
+
+h5 {
+	font-family: Courier;
+}
+
+p {
+	text-indent: 20px;
+}
+
 body {
-  background-image: url('bg.png');
+  font-family: Courier;
+  padding: 20px;
+  background-image: url('bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
 }
 
-/* CSS table DEF */
-table, td {
+
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  font-size: 40px;
   text-align: center;
-}
-
-table {
-  margin: 15px;
-  position: relative;
-  transform: translate(2%, 5%);
-  border-collapse: collapse;
-  width: 95%;
-  table-layout: fixed;
-}
-
-td {
-  height: 50px;
-  font-size: 25px;
-  font-family: Monospace;
-  color: rgb(0, 0, 0);
-  font-weight: 900;
-  border-radius: 10px;
   background-color: rgb(255,255,255,0.9);
-  box-shadow: 0px 0px 2px 3px rgba( 0, 0, 0, 0.3);
 }
 
-/* CSS video DEF */
-video {
-  left: 50%;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
+/* header image */
+.header_img {
+  background-color: rgb(255,255,255,0);
+  width: 100%;
+  padding: 0px;
 }
 
-/* CSS footer DEF*/
-footer {
-  position: absolute;
-  top: 127%;
-  left: 50%;
-  text-decoration: underline;
-  font-family: Times New Roman;
-  color: rgb(0, 160, 160);
-  font-weight: bold;
+/* portrait image */
+.portrait_img {
+  background-color: rgb(255,255,255,0);
+  width: 150;
+  height: 150;
+  padding: 0px;
+  border-radius: 50%; /* Makes it a circle */
+  overflow: hidden;
+  box-shadow: 4px 2px 15px 10px rgba( 0, 0, 0, 0.3);
 }
 
-/* CSS text box DEF */
-/* CSS for text box */
-.text-box {
-  position: relative;
-  transform: translate(12.5%, 2%);
-  width: 80%; /* Adjust width as needed */
-  background-color: rgba(255, 255, 255, 0.98); /* Adjust opacity as needed */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
-}
-
-.text-box p {
-  font-size: 20px; /* Adjust text size as needed */
-  text-align: center;
-}
-
-
-/*/////////////////////////////////////////////////*/
-/* CSS Gallery DEF*/
-
-/* CSS grid DEF */
-.column {
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  font-family: Georgia;
   float: left;
-  width: 12.5%;
-  border: 2px solid rgb(155,148,131);
-  padding: 1px;
+  width: 75%;
 }
 
-/* Inside grid */
-.column img {
-  opacity: 0.7; 
-  cursor: pointer; 
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
-.column img:hover {
-  opacity: 1;
+/* Fake image */
+.fakeimg {
+  background-color: #eee;
+  width: 100%;
+  padding: 20px;
+  object-fit: fill;
+}
+
+  .picture-box {
+    width: 100%; /* Adjust the width and height as needed */
+    height: 250px;
+	padding: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .picture-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image fill the box and crop if necessary */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .picture-box-inline {
+    width: 50%; /* Adjust the width and height as needed */
+    height: 250px;
+	padding: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .picture-box-inline img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make the image fill the box and crop if necessary */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+/* Add a card effect for articles */
+.card_right {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(255,255,255,0.9);
+}
+
+.card_left {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(255,255,255, 1);
 }
 
 /* Clear floats after the columns */
@@ -113,21 +132,18 @@ footer {
   clear: both;
 }
 
-/* image container */
-.container {
-  left: 50%;
-  position: absolute;
-  top: 80%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
-/* Closable button */
-.closebtn {
-  position: absolute;
-  top: 0.5%;
-  right: 0.5%;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
